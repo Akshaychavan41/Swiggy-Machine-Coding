@@ -27,7 +27,7 @@ export default class View {
         return folderEle;
       });
       childELe.append(...eleData);
-      //   childELe.style.display = "none";
+      childELe.style.overflow = "hidden";
       element.append(childELe);
       return true;
     } else {

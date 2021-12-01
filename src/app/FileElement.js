@@ -3,7 +3,7 @@ export default class FileElement {
     const folderEle = document.createElement("div");
     folderEle.classList.add("folder");
     const folderText = document.createElement("p");
-    // folderText.style.display = "inline-block";
+    folderText.style.display = "inline-block";
     if (name.charAt(0) === ".") {
       folderText.classList.add("dimmer");
     }
