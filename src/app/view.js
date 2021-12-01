@@ -37,10 +37,9 @@ export default class View {
 
   addEventListener() {
     document.getElementById("nav").addEventListener("click", (e) => {
-      console.log();
-      //   if ((e.target.className = "btn")) {
-      //     this.toggleChildrenHide(e.target.parentNode);
-      //   }
+      if ((e.target.className = "btn")) {
+        this.toggleChildrenHide(e.target.parentNode);
+      }
 
       this.getPath(e.target);
     });
