@@ -1,0 +1,57 @@
+/* Basic reset */
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__main {
+  background-color: dimgray;
+  width: 40vw;
+  .folder {
+    width: 200px;
+    transition-property: height;
+    transition-delay: 300ms;
+  }
+  .folder.child {
+    padding-left: 20px;
+  }
+  margin: 50px;
+  .btn {
+    width: 20px;
+    margin-right: 10px;
+  }
+  p.dimmer {
+    opacity: 50%;
+  }
+  .children.hide {
+    height: 0px;
+  }
+  .children {
+    height: auto;
+  }
+}
